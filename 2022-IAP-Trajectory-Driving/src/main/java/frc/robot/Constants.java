@@ -21,7 +21,11 @@ public final class Constants {
     public static final double radius = InchtoMeters*radiusinInch;
     public static final double pi  = 3.14159;
     public static final double circum = 2*pi*radius;
-    public static final int ticksToMeters= 4096; //divivde this by ticks to get meters
-
+    public static final double ticksToMeters= (2*3.14159*0.075)/4096; //divivde this by ticks to get meters
+    public static final class PIDConstants{
+        public static final double kP = 6.6544;
+        public static final double kI = 0;
+        public static final double kD = 4.833;
+    }
 }
 

@@ -37,7 +37,7 @@ public class RobotContainer {
     _leftJoystick = new Joystick(Constants.leftPort);
     _rightJoystick = new Joystick(Constants.rightPort);
     //_tankDrive = new TankDrive(_driveTrain,_leftJoystick,_rightJoystick);
-    _distanceAuto = new DistanceAuto(_driveTrain,1);
+    _distanceAuto = new DistanceAuto(_driveTrain,1.0);
     //_driveTrain.setDefaultCommand(_distanceAuto);
     configureButtonBindings();
   }
